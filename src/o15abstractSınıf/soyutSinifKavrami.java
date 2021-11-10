@@ -10,7 +10,7 @@ public class soyutSinifKavrami {
 
         System.out.println("************************");
 
-        Dikdortgen dikdortgen = new Dikdortgen(10,2);
+        Dikdortgen dikdortgen = new Dikdortgen(10, 2);
         dikdortgen.alanHesapla();
         dikdortgen.cevreHesapla();
         dikdortgen.adiniSoyle();
@@ -21,15 +21,15 @@ public class soyutSinifKavrami {
         daire.cevreHesapla();
         ((Daire) daire).adiniSoyle();
 
-        alanlariKarsilastir(kare,dikdortgen);
+        alanlariKarsilastir(kare, dikdortgen);
     }
 
     //public static void alanlariKarsilastir(Kare k1, Kare k2){} klasik kullanım her ikisi için farklı
     // methodlar tanımlamamız gerekir örn: kare dikdörtgen, kare daire, kodu uzatır gereksizdir. Polymorphisim kullanılmalıdı
-    public static void alanlariKarsilastir(GeometrikSekil gs1, GeometrikSekil gs2){ //burada ne gelirse gelsin işlemimiz çalışacaktır.
-        if(gs1.getHesaplananAlan()>gs2.getHesaplananAlan()){
+    public static void alanlariKarsilastir(GeometrikSekil gs1, GeometrikSekil gs2) { //burada ne gelirse gelsin işlemimiz çalışacaktır.
+        if (gs1.getHesaplananAlan() > gs2.getHesaplananAlan()) {
             System.out.println("gs1 alani > gs2 alani");
-        }else {
+        } else {
             System.out.println("gs2 alani > gs1 alanindan");
         }
     }
@@ -78,7 +78,7 @@ class Kare extends GeometrikSekil {
 
     }
 
-    public void adiniSoyle(){
+    public void adiniSoyle() {
         System.out.println("ben bir kare nesnesiyim");
     }
 }
@@ -111,7 +111,8 @@ class Dikdortgen extends GeometrikSekil {
         setHesaplananAlan(getBirinciKenar() * ikinciKenar);
         System.out.println("Dikdorgenin alanı : " + getHesaplananAlan());
     }
-    public void adiniSoyle(){
+
+    public void adiniSoyle() {
         System.out.println("ben dikdörgenim");
     }
 }
@@ -132,11 +133,11 @@ class Daire extends GeometrikSekil {
     @Override
     public void alanHesapla() {
         setHesaplananAlan((int) (3.14 * getBirinciKenar() * getBirinciKenar()));
-        System.out.println("Dairenin alanı : " + getHesaplananAlan() );
+        System.out.println("Dairenin alanı : " + getHesaplananAlan());
 
     }
 
-    public void adiniSoyle(){
+    public void adiniSoyle() {
         System.out.println("ben bir daireyimmm");
     }
 }
