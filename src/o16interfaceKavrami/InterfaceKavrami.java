@@ -1,5 +1,5 @@
 package o16interfaceKavrami;
-
+/*
 import java.util.ArrayList;
 
 public class InterfaceKavrami {
@@ -17,6 +17,9 @@ public class InterfaceKavrami {
 
 interface Yenilebilir {
     void yenmeSekli();
+    default void adiniSoyle(){
+        System.out.println("ben kişi interfacesiyim");
+    }
 }
 
 class Elma implements Yenilebilir {
@@ -41,4 +44,4 @@ class İnek implements Yenilebilir {
     public void yenmeSekli() {
 
     }
-}
+}*/
