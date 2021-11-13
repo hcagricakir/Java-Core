@@ -1,4 +1,4 @@
-package o16interfaceKavrami;
+package o16interfaceKavrami_innerclass;
 
 public class InterfaceOzetJava8 {
     public static void main(String[] args) {

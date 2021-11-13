@@ -1,4 +1,4 @@
-package o16interfaceKavrami;
+package o16interfaceKavrami_innerclass;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package o16interfaceKavrami.icice_siniflar;
+package o16interfaceKavrami_innerclass.icice_siniflar;
 
 public class YaziciSinif {
 
@@ -25,10 +25,25 @@ public class YaziciSinif {
     class StringDiziYazdir { //inner classs
         private int privateDegiskenDahili = 1;
         public int publicDegiskenDahili = 4;
+
         void stringDiziYazdir(String[] dizi) {
 
             for (String temp : dizi) {
                 System.out.println(temp);
+            }
+        }
+    }
+
+    static class class1 {
+        static class class2 {
+            void metotB() {
+
+            }
+
+            static class class3 {
+                void metotC() {
+
+                }
             }
         }
     }
